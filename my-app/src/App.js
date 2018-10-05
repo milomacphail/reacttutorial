@@ -28,6 +28,13 @@ class App extends Component {
       ninjas: ninjas
     }) 
   }
+  componentDidMount(){
+    console.log("Component mounted");
+  }
+  componentDidUpdate(prevProps, prevState){
+    console.log("Component updated");
+    console.log(prevProps);
+  }
   render(){
     return(
       <div className="App">
